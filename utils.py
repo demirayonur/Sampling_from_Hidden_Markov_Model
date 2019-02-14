@@ -21,7 +21,7 @@ def random_prior_prob_generation(nstate):
 
     """
     This function returns a prior distribution based on the
-    given number of states such that sum of the all probabilities
+    number of states such that sum of the all probabilities
     is equal to 1.
     
     :param nstate: Integer
@@ -34,7 +34,13 @@ def random_prior_prob_generation(nstate):
 def random_transition_prob_generation(nstate):
 
     """
-
+    This function returns a markov chain.
+    Properties of markov chains:
+    i) Each element of MC is greater than or equal to zero 
+       and less than or equal to one.
+    
+    ii) Sum of elements in each row has to be equal to 1.
+    
     :param nstate: Integer
     :return: 2D Numpy Array
     """
