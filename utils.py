@@ -36,6 +36,7 @@ def random_transition_prob_generation(nstate):
     """
     This function returns a markov chain.
     Properties of markov chains:
+    
     i) Each element of MC is greater than or equal to zero 
        and less than or equal to one.
     
@@ -55,7 +56,9 @@ def random_transition_prob_generation(nstate):
 def mean_vector_generation(nstate, ndim):
 
     """
-
+    This function return random mean vectors for each state.
+    There is not any constraint on it.
+    
     :param nstate: Integer
     :param ndim: Integer
     :return: 2D Numpy Array
@@ -69,9 +72,11 @@ def mean_vector_generation(nstate, ndim):
 
 
 def cov_matrix_generation(nstate, ndim):
-
+    
     """
-
+    This function returns positive semidefinite covariance matrix
+    for each state by using sklearn.datasets
+    
     :param nstate: Integer
     :param ndim: Integer
     :return: 3D Numpy Array
