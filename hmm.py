@@ -57,13 +57,8 @@ class HMM:
         fig = plt.figure(figsize=plt.figaspect(0.5))
 
         ax = fig.add_subplot(1, 2, 1, projection='3d')
-        ax.scatter(x[:, 0], x[:, 1], x[:, 2], s=7, c='green')
+        ax.scatter(x[:, 0], x[:, 1], x[:, 2], s=7, c='grey')
         for i in range(self.n_state):
             ax.scatter(self.means[i, 0], self.means[i, 1], self.means[i, 2], s=50)
-
-        ax = fig.add_subplot(1, 2, 2, projection='3d')
-        ax.scatter(x[:, 3], x[:, 4], x[:, 5], s=7, c='green')
-        for i in range(self.n_state):
-            ax.scatter(self.means[i, 3], self.means[i, 4], self.means[i, 5], s=50)
-
+            
         plt.show()
