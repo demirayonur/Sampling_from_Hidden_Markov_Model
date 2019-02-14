@@ -6,6 +6,9 @@ import numpy as np
 def sum_normalize(arr):
 
     """
+    This function normalizes the given 1D array so that 
+    the sum of the elements in it is equal to 1. Instead
+    of inplacing, it returns a new 1D array.
 
     :param arr: 1D Numpy Array
     :return: 1D Numpy Normalized Array
@@ -17,7 +20,10 @@ def sum_normalize(arr):
 def random_prior_prob_generation(nstate):
 
     """
-
+    This function returns a prior distribution based on the
+    given number of states such that sum of the all probabilities
+    is equal to 1.
+    
     :param nstate: Integer
     :return: 1D Numpy Normalized Array
     """
